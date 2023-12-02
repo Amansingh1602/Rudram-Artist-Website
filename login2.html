@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login and registration form</title>
+    <link rel="stylesheet" href="login2.css">
+</head>
+<body>
+    <header>
+        <input type ="checkbox" name ="" id ="chk1">
+        <div class="logo"><h1>RUDRAM</h1></div>
+            <div class="search-box">```````````````
+                <form>
+                    <input type ="text" name ="search" id ="srch" placeholder="Search">
+                    <button  type ="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <ul>
+                <li><a href="About.html">About</a></li>
+                <li><a href="product.html">Store</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                 
+            </ul>
+            </div>
+    </header>
+    <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                    <button type="button" class="toggle-btn"onclick="register()">Register</button>
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id"
+                    required>
+                    <input type="password" class="input-field" placeholder="Enter Password"
+                    required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn" onclick="newpage()">Log in</button>
+
+                </form>
+                <form id="register" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id"
+                    required><input type="email" class="input-field" placeholder="Email id"
+                    required>
+                    <input type="password" class="input-field" placeholder="Enter Password"
+                    required>
+                    <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+
+                </form>
+            </div>
+            
+    </div>
+    <script>
+        var x=document.getElementById("login")
+        var y=document.getElementById("register")
+        var z=document.getElementById("btn")
+        function register(){
+            x.style.left="-400px"
+            y.style.left="50px"
+            z.style.left="110px"
+        }function login(){
+            x.style.left="50px"
+            y.style.left="450px"
+            z.style.left="0"
+        }
+        function newpage(){
+            var newpageurl = 'Index.html'
+        window.open(newpageurl,'_blank')        }
+    </script>
+</body>
+</html>
